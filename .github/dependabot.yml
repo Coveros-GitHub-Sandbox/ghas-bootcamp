@@ -9,3 +9,16 @@ updates:
     directory: "/frontend" # Location of package manifests
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/authn-service" # Location of package manifests
+    schedule:
+      interval: "daily"
+    assignees:
+      - "coveros-phil"
+    reviewers:
+      - "coveros-phil"
+    labels:
+      - "triage-somethingelse"
+    commit-message:
+      prefix: "pip"
